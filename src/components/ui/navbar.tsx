@@ -11,8 +11,7 @@ const NextLinks = {
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
     { name: "Work", href: "/work" },
-    { name: "About us", href: "/about" },
-    { name: "Blog", href: "/blog" },
+   
   ],
 };
 
