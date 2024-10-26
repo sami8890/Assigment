@@ -1,0 +1,185 @@
+/* service.css */
+
+#work {
+    padding: 2.5rem 8rem;
+}
+
+.experience-text {
+    color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience-heading {
+    font-size: 2.25rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.experience-heading span {
+    display: inline-block;
+    padding: 5px;
+}
+
+.services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.service-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.service-line div {
+    width: 6rem;
+    height: 2px;
+    background-color: #22c55e;
+    margin-right: 0.5rem;
+}
+
+.service-title {
+    color: #22c55e;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.service-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.service-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 17vh;
+}
+
+.service-box {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+.service-icon {
+    margin-right: 4rem;
+}
+
+.service-text {
+    color: white;
+    margin-top: 1rem;
+    margin-right: 1.75rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    #work {
+        padding: 2.5rem 4rem;
+    }
+
+    .service-boxes {
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5rem 2rem;
+    }
+
+    .service-box {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #work {
+        padding: 2.5rem 1rem;
+    }
+
+    .experience-text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .experience-heading {
+        font-size: 1.75rem;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+
+    .service-title {
+        font-size: 1rem;
+    }
+
+    .service-description {
+        font-size: 0.875rem;
+        text-align: center;
+    }
+
+    .service-boxes {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .service-box {
+        width: 90%;
+        margin: 1rem 0;
+    }
+
+    .service-icon,
+    .service-text {
+        margin-right: 0;
+        text-align: center;
+    }
+    .services-section {
+        margin-top: 1rem;
+        align-items: center;
+    }
+
+    .service-line {
+        /* align-self: center; */
+        margin-bottom: 0;
+        align-items: center;
+        gap: 0;
+        width: 100px;
+    }
+
+    .service-line div {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-heading {
+        font-size: 1.5rem;
+    }
+
+    .service-title {
+        align-items: flex-end;
+        font-size: 0.875rem;
+    }
+
+    .service-description {
+        font-size: 0.65rem;
+    }
+
+    .service-boxes {
+        padding: 1.5rem 1rem;
+    }
+
+    .service-box {
+        padding: 0.5rem;
+    }
+}
